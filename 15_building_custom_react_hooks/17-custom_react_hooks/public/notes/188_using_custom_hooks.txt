@@ -1,0 +1,7 @@
+
+import your function in the file you want to use it in
+example:
+  import useCounter from '../hooks/use-counter';
+
+If I call useCounter in forwardCounter,
+the state will be tied to the component forwardCounter

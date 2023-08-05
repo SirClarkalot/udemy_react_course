@@ -1,0 +1,12 @@
+
+We should let our users know about any errors and what they are
+
+To do this we should create an error state
+
+  const [error, setError] = useState(null);
+
+When not useing async,
+  you can use catch() to catch any errors
+
+When using async,
+  use try {} catch {}

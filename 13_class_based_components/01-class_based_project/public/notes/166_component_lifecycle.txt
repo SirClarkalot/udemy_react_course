@@ -1,0 +1,15 @@
+
+Can't use hooks with class components
+
+Life cycle methods:
+
+  componentDidMount()
+    same as useEffect(..., []) with an empty array
+
+  componentDidUpdate()
+    called when component is updated
+    same as useEffect with dependencies
+
+  componentWillUnmount()
+    called before component is removed from the DOM
+    same as a timeout function in useEffect

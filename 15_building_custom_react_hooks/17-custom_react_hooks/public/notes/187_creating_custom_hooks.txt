@@ -1,0 +1,12 @@
+
+In this app the forward and backward code basically do the same thing
+Whenever there's duplicate code, we should refactor
+
+You can only call react hooks in react component functions...
+or custom hooks
+
+Therefore need to build a custom hook
+
+Create a hooks folder next to the components folder
+  function you create MUST start with 'use'
+  'use' signals that it will be a custom hook

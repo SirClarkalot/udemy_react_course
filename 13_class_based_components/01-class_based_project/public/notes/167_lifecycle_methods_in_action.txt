@@ -1,0 +1,23 @@
+similar to useEffect() with dependencies
+The if statement functions as the dependency
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.searchTerm !== this.state.searchTerm) {
+      this.setState({
+        filteredUsers: DUMMY_USERS.filter((user) =>
+        user.name.includes(this.state.searchTerm)
+        ),
+      });
+    }
+  };
+
+
+    // if filteredUSers is set to an empty array initially
+  componentDidMount() {
+    // send http request
+    this.setState({ filteredUsers: DUMMY_USERS });
+  }
+
+    componentWillUnmount() {
+    console.log('USER WILL UNMOUNT')
+  }

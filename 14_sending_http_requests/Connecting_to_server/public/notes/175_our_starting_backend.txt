@@ -1,0 +1,3 @@
+API--Aplication Program Interface
+
+There are REST APIs and GraphQL APIs

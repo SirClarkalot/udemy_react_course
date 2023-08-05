@@ -1,0 +1,12 @@
+
+  render () {} in a class based component is sumilar to
+  return () in a function based component
+
+  Need to use Component to make props work...for example:
+  import { Component } from 'react';
+  Class User extends Component
+  ...Works similar to class inheritance
+  Need to add 'this' keyword to make props work. For example...
+  {props.name} === {this.props.name}
+
+  Class based components can work with functional based components

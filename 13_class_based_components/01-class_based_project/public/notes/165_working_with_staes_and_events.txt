@@ -1,0 +1,21 @@
+
+To set state with class based, use a constructor in the class
+class based state must be set to an object
+
+
+class Users extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showUsers: true,
+      more: 'Test'
+    };
+  }
+
+To change state use this.setState
+
+  toggleUsersHandler() {
+    this.setState((currentState) => {
+      return {showUsers: !currentState.showUsers}
+    });
+  }

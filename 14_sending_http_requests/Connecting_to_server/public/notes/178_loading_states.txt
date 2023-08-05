@@ -1,0 +1,8 @@
+You would want to show a loading spinner when waiting for the results
+
+use a loading state to let your users know
+  const [isLoading, setIsLoading] = useState(false);
+
+        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
+        {!isLoading && movies.length === 0 && <p>Found no movies.</p>}
+        {isLoading && <p>Loading...</p>}

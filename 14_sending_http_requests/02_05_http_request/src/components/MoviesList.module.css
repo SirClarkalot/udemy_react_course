@@ -1,0 +1,11 @@
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  margin-right: 10px;
+}

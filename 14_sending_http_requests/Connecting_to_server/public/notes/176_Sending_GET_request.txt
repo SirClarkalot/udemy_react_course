@@ -1,0 +1,25 @@
+We will use Fetch API to get the data
+
+Sending an HTTP request is an asynchrounous task--it doesn't happen immediately
+So we need to use a promise --> .then()
+use --> .catch() for any potential errors
+
+
+below is the function we use to get movies from the api
+
+  const fetchMoviesHandler = () => {
+    fetch('https://swapi.dev/api/films').then(response => {
+      return response.json();
+    }).then(data => {
+      const transformedData = data.results.map(movieData=> {
+        return {
+          id: movieData.episode_id,
+          title: movieData.title,
+          openingText: movieData.opening_crawl,
+          releaseDate: movieData.release_date
+
+        }
+      });
+      setMovies(transformedData);
+    });
+  }
